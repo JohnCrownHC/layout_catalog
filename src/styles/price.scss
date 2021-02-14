@@ -1,12 +1,12 @@
 .price {
-  @include flex-center;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
   justify-content: space-between;
   &-margin {
     margin-bottom: 20px;
   }
 
   &__text {
-    align-self: flex-end;
     line-height: 15px;
     font-size: $basicCardFz;
     font-weight: $defaultFw;

@@ -1,23 +1,24 @@
 .rating {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
   justify-content: space-between;
   &-margin {
     margin-bottom: 20px;
   }
 
   &__stars {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
   }
 
   &__active {
-    display: flex;
     background-image: url(../images/star-active.svg);
     background-repeat: no-repeat;
     background-position: center;
     &-properties {
       width: $starSize;
       height: $starSize;
-      margin-right: 4px;
     }
   }
 
