@@ -12,23 +12,14 @@
     gap: 4px;
   }
 
-  &__active {
+  &__star {
+    width: $starSize;
+    height: $starSize;
     background-image: url(../images/star-active.svg);
     background-repeat: no-repeat;
     background-position: center;
-    &-properties {
-      width: $starSize;
-      height: $starSize;
-    }
-  }
-
-  &__unactive {
-    background-image: url(../images/star.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    &-properties {
-      width: $starSize;
-      height: $starSize;
+    &:last-child {
+      background-image: url(../images/star.svg);
     }
   }
 
