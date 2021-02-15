@@ -8,9 +8,10 @@
 @import "price";
 
 .main-styles {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 50px 48px;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .main-properties {
