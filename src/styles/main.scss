@@ -9,13 +9,19 @@
 
 .main-styles {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(auto-fill, 200px);
   gap: 50px 48px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .main-properties {
   max-width: 944px;
   width: calc(100% - 80px);
   margin: 0 auto;
+}
+
+@media (min-width: 1020px) {
+  .main-styles {
+    grid-template-columns: repeat(4, 200px);
+  }
 }
